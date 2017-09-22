@@ -2,11 +2,11 @@
 Thumbs.db
 ehthumbs.db
 
-#Vendor files
-/vendor
-
 # Folder config file
 Desktop.ini
+
+# Vendor directory
+/vendor
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
