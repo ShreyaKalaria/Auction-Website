@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "04300f5168d0fcc8e0cf5aac7f70b50c",
+    "content-hash": "7387705a110861582dc7f0bd907a58dc",
     "packages": [
         {
             "name": "herrera-io/pdo-log",
