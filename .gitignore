@@ -2,6 +2,9 @@
 Thumbs.db
 ehthumbs.db
 
+#Vendor files
+/vendor
+
 # Folder config file
 Desktop.ini
 
