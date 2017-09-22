@@ -4,13 +4,16 @@ use Herrera\Pdo\PdoServiceProvider;
 use Silex\Application;
 
 $dbopts = parse_url(getenv('DATABASE_URL'));
-$app->register(new Herrera\Pdo\PdoServiceProvider(),
+$app = new Application();
+$app->register(new PdoServiceProvider(),
                array(
                    'pdo.dsn' => 'pgsql:dbname='.ltrim($dbopts["path"],'/').';host='.$dbopts["host"] . ';port=' . $dbopts["port"],
                    'pdo.username' => $dbopts["user"],
                    'pdo.password' => $dbopts["pass"]
                )
 );
+
+$pdo = $app['pdo'];
 
 ?>
 <!DOCTYPE html>
