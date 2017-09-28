@@ -4,3 +4,5 @@ Auction web appliation created for a PHP/SQL class. Utilizes the full LAMP stack
 https://lit-wildwood-80916.herokuapp.com/index.php 
 
 Many parts nonfunctioning, as of yet there is no backend setup. Going to do a large refactor as the class project had zero standards.
+
+Currently considering ReactJS/GraphQL/PostgresQL.
