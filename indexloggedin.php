@@ -11,7 +11,7 @@ $password = $url["pass"];
 $db = substr($url["path"], 1);
 $port = "5432";
 
-$dsn = "pgsql:host=$host;dbname=$db;user=$username;port=$port;password=$password";
+$database = "pgsql:host=$host;dbname=$db;user=$username;port=$port;password=$password";
 
 if($db){
     echo "Connected <br />".$db;
@@ -19,7 +19,7 @@ if($db){
     echo "Not connected";
 }
 
-/*$user = $database->prepare(<<<'SQL'
+$user = $database->prepare(<<<'SQL'
     SELECT
         CONCAT(PERSON.FORENAME, ' ', PERSON.SURNAME) AS CURRENTUSER
     FROM
@@ -30,7 +30,7 @@ SQL
 );
 
 $user->bindValue(':id', $_SESSION['userID'], PDO::PARAM_INT);
-$user->execute();*/
+$user->execute();
 
 ?>
 <!DOCTYPE html>
