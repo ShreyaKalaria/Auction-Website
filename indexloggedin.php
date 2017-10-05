@@ -3,7 +3,7 @@ session_start();
 
 # This function reads your DATABASE_URL config var and returns a connection
 # string suitable for pg_connect. Put this in your app.
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$url = parse_url(getenv("DATABASE_URL"));
 
 $host = $url["host"];
 $username = $url["user"];
