@@ -1,10 +1,6 @@
 <?php
 session_start();
 
-if(!isset($_SESSION['userID'])){ //if login in session is not set
-    header("Location: youmustbeloggedin.php");
-}
-
 # This function reads your DATABASE_URL config var and returns a connection
 # string suitable for pg_connect. Put this in your app.
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
