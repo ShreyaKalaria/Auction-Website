@@ -1,18 +1,4 @@
 <?php
-
-use Herrera\Pdo\PdoServiceProvider;
-
-$dbopts = parse_url(getenv('DATABASE_URL'));
-$app->register(new PdoServiceProvider(),
-               array(
-                   'pdo.dsn' => 'pgsql:dbname='.ltrim($dbopts["path"],'/').';host='.$dbopts["host"] . ';port=' . $dbopts["port"],
-                   'pdo.username' => $dbopts["user"],
-                   'pdo.password' => $dbopts["pass"]
-               )
-);
-
-$pdo = $app['pdo'];
-
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
