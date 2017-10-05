@@ -35,25 +35,10 @@ session_destroy();
                 <input type="submit" value="login"/>
             </form>
         </div>
-        <p class="light-text">Hello grader. Specific instructions how to test cron job + purchase. Copy and paste this somewhere for easy reference.
-        <br/><br/>
-        Test User 1:<br/>
-        email: (CREATE YOUR OWN AND REMEMBER!)<br/>
-        password: (CREATE YOUR OWN AND REMEMBER!)<br/><br/>
-
-        Test User 2:<br/>
-        email: (CREATE YOUR OWN AND REMEMBER!)<br/>
-        password: (CREATE YOUR OWN AND REMEMBER!)<br/><br/>
-
-        Step 1: Create listing with Test User 1 with a date that will expire in a short period of time. Log out.<br/>
-        Step 2: Bid on listing with Test User 2. Log out.<br/>
-        Step 3: Simulate the close auction cron job.<br/>
-        Step 4: Log in normally as Test User 2<br/>
-        Step 5: Proceed to test purchase functionality in the items won tab.</p>
     </div>
 
     <div id="footer">
-        <p>Copyright ©2016, Acme Auctions, Inc. and BevoTech Co.</p>
+        <p>Copyright ©2017, Acme Auctions, Inc. and BevoTech Co.</p>
         <p><a href="cronjob.php">Simulate cron job to close expired auctions.</a></p>
     </div>
 
