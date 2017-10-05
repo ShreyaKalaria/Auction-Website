@@ -5,8 +5,25 @@ if(!isset($_SESSION['userID'])){ //if login in session is not set
     header("Location: youmustbeloggedin.php");
 }
 
-require_once '/u/ssp0929/SQLDB-login/openDatabase.php';
-$user = $database->prepare(<<<'SQL'
+# This function reads your DATABASE_URL config var and returns a connection
+# string suitable for pg_connect. Put this in your app.
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$host = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
+$port = "5432";
+
+$dsn = "pgsql:host=$host;dbname=$db;user=$username;port=$port;password=$password";
+
+if($db){
+    echo "Connected <br />".$db;
+}else {
+    echo "Not connected";
+}
+
+/*$user = $database->prepare(<<<'SQL'
     SELECT
         CONCAT(PERSON.FORENAME, ' ', PERSON.SURNAME) AS CURRENTUSER
     FROM
@@ -17,7 +34,7 @@ SQL
 );
 
 $user->bindValue(':id', $_SESSION['userID'], PDO::PARAM_INT);
-$user->execute();
+$user->execute();*/
 
 ?>
 <!DOCTYPE html>

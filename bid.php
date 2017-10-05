@@ -1,21 +1,11 @@
 <?php
 session_start();
 
-use Herrera\Pdo\PdoServiceProvider;
-use Silex\Application;
-
 if(!isset($_SESSION['userID'])){ //if login in session is not set
     header("Location: youmustbeloggedin.php");
 }
 
-$dbopts = parse_url(getenv('DATABASE_URL'));
-$app->register(new Herrera\Pdo\PdoServiceProvider(),
-               array(
-                   'pdo.dsn' => 'pgsql:dbname='.ltrim($dbopts["path"],'/').';host='.$dbopts["host"] . ';port=' . $dbopts["port"],
-                   'pdo.username' => $dbopts["user"],
-                   'pdo.password' => $dbopts["pass"]
-               )
-);
+require_once '/u/ssp0929/SQLDB-login/openDatabase.php';
 
 $auctionQuery = $database->prepare(<<<'SQL'
     SELECT
