@@ -6,10 +6,9 @@ ehthumbs.db
 Desktop.ini
 
 # Vendor directory
-/legacy-LAMP-code/vendor
+/vendor
 
 # Node modules
-
 /node_modules
 
 # Recycle Bin used on file shares
