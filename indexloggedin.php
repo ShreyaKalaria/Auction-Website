@@ -19,7 +19,7 @@ if($db){
     echo "Not connected";
 }
 
-$user = $database->prepare(<<<'SQL'
+/*$user = $database->prepare(<<<'SQL'
     SELECT
         CONCAT(PERSON.FORENAME, ' ', PERSON.SURNAME) AS CURRENTUSER
     FROM
@@ -30,7 +30,7 @@ SQL
 );
 
 $user->bindValue(':id', $_SESSION['userID'], PDO::PARAM_INT);
-$user->execute();
+$user->execute();*/
 
 ?>
 <!DOCTYPE html>
