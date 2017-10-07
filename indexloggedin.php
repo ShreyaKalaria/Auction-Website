@@ -1,5 +1,5 @@
 <?php
-session_start();
+/*session_start();
 
 # This function reads your DATABASE_URL config var and returns a connection
 # string suitable for pg_connect. Put this in your app.
@@ -30,9 +30,9 @@ SQL
 );
 
 $user->bindValue(':id', $_SESSION['userID'], PDO::PARAM_INT);
-$user->execute();*/
+$user->execute();
 
-?>
+*/?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>

@@ -1,5 +1,5 @@
 <?php
-session_start();
+/* session_start();
 
 require_once '/u/ssp0929/SQLDB-login/openDatabase.php';
 
@@ -35,7 +35,7 @@ $createPerson->closeCursor();
 $_SESSION['userID'] = $pid;
 $_SESSION['username'] = $_POST['firstname']." ".$_POST['lastname'];
 
-?>
+ */?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>

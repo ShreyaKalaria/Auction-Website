@@ -1,5 +1,5 @@
 <?php
-require_once '/u/ssp0929/SQLDB-login/openDatabase.php';
+/*require_once '/u/ssp0929/SQLDB-login/openDatabase.php';
 
 if (!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] !== "on") {
     header('HTTP/1.1 403 Forbidden: TLS Required');
@@ -29,7 +29,7 @@ $username = $row["username"];
 
 $verifyPass = password_verify($_POST['password'], $hash);
 
-?>
+*/?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>

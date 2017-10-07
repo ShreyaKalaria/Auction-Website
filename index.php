@@ -1,8 +1,8 @@
 <?php
-session_start();
+/*session_start();
 session_unset();
 session_destroy();
-
+*/
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
@@ -49,7 +49,7 @@ session_destroy();
 
     <div id="footer">
         <p>Copyright ©2017, Acme Auctions, Inc. and BevoTech Co.</p>
-        <p><a href="cronjob.php">Simulate cron job to close expired auctions.</a></p>
+        <p><a href="cronjob.php">NOTE: Nonfunctioning since code was ported. Simulate cron job to close expired auctions.</a></p>
     </div>
 
   </body>
