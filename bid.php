@@ -59,12 +59,48 @@ $auctionQuery->execute();
 </div>
 
 <div id="content">
-    <?php
-    foreach ($auctionQuery->fetchAll() as $auction) {
-    ?>
     <div class="card">
         <img src="https://i.vimeocdn.com/portrait/58832_300x300" alt="Photo Error"/>
-        <dfn><?= htmlspecialchars($auction['ITEM_CAPTION']) ?></dfn>
+        <dfn>This is a test caption</dfn>
+        <ul>
+            <li>Seller: Test1</li>
+            <li>Current Bid: $5</li>
+            <li>Close Time: 12-12-2018</li>
+        </ul>
+        <form action="bidonthislisting.php" method="get">
+            <input type="hidden" name="id" value="<?= htmlspecialchars($auction['AID']) ?>" />
+            <input type="submit" value = "view listing"/>
+        </form>
+    </div>
+    <div class="card">
+        <img src="https://i.vimeocdn.com/portrait/58832_300x300" alt="Photo Error"/>
+        <dfn>This is a test caption</dfn>
+        <ul>
+            <li>Seller: Test1</li>
+            <li>Current Bid: $5</li>
+            <li>Close Time: 12-12-2018</li>
+        </ul>
+        <form action="bidonthislisting.php" method="get">
+            <input type="hidden" name="id" value="<?= htmlspecialchars($auction['AID']) ?>" />
+            <input type="submit" value = "view listing"/>
+        </form>
+    </div>
+    <div class="card">
+        <img src="https://i.vimeocdn.com/portrait/58832_300x300" alt="Photo Error"/>
+        <dfn>This is a test caption</dfn>
+        <ul>
+            <li>Seller: Test1</li>
+            <li>Current Bid: $5</li>
+            <li>Close Time: 12-12-2018</li>
+        </ul>
+        <form action="bidonthislisting.php" method="get">
+            <input type="hidden" name="id" value="<?= htmlspecialchars($auction['AID']) ?>" />
+            <input type="submit" value = "view listing"/>
+        </form>
+    </div>
+    <div class="card">
+        <img src="https://i.vimeocdn.com/portrait/58832_300x300" alt="Photo Error"/>
+        <dfn>This is a test caption</dfn>
         <ul>
             <li>Seller: Test1</li>
             <li>Current Bid: $5</li>
@@ -101,49 +137,6 @@ $auctionQuery->execute();
             <input type="submit" value = "view listing"/>
         </form>
     </div>
-    <div class="card">
-        <img src="https://i.vimeocdn.com/portrait/58832_300x300" alt="Photo Error"/>
-        <dfn><?= htmlspecialchars($auction['ITEM_CAPTION']) ?></dfn>
-        <ul>
-            <li>Seller: Test1</li>
-            <li>Current Bid: $5</li>
-            <li>Close Time: 12-12-2018</li>
-        </ul>
-        <form action="bidonthislisting.php" method="get">
-            <input type="hidden" name="id" value="<?= htmlspecialchars($auction['AID']) ?>" />
-            <input type="submit" value = "view listing"/>
-        </form>
-    </div>
-    <div class="card">
-        <img src="https://i.vimeocdn.com/portrait/58832_300x300" alt="Photo Error"/>
-        <dfn><?= htmlspecialchars($auction['ITEM_CAPTION']) ?></dfn>
-        <ul>
-            <li>Seller: Test1</li>
-            <li>Current Bid: $5</li>
-            <li>Close Time: 12-12-2018</li>
-        </ul>
-        <form action="bidonthislisting.php" method="get">
-            <input type="hidden" name="id" value="<?= htmlspecialchars($auction['AID']) ?>" />
-            <input type="submit" value = "view listing"/>
-        </form>
-    </div>
-    <div class="card">
-        <img src="https://i.vimeocdn.com/portrait/58832_300x300" alt="Photo Error"/>
-        <dfn><?= htmlspecialchars($auction['ITEM_CAPTION']) ?></dfn>
-        <ul>
-            <li>Seller: Test1</li>
-            <li>Current Bid: $5</li>
-            <li>Close Time: 12-12-2018</li>
-        </ul>
-        <form action="bidonthislisting.php" method="get">
-            <input type="hidden" name="id" value="<?= htmlspecialchars($auction['AID']) ?>" />
-            <input type="submit" value = "view listing"/>
-        </form>
-    </div>
-    <?php
-    }
-    $auctionQuery->closeCursor();
-    ?>
 </div>
 
 <div id="footer">
