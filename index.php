@@ -36,14 +36,15 @@ session_destroy();
             </form>
         </div>
         <p>
-        NOTE: This website was directly ported over to Heroku
-        without refactoring SQL statements to accomodate for PostgresQL syntax.
-        Additionally, the back end setup although initialized is completely empty
-        and I don't have access to the old MySQL data to port the tables over.
+            <a href="indexloggedin.php">Simulate Login</a>
+            NOTE: This website was directly ported over to Heroku
+            without refactoring SQL statements to accomodate for PostgresQL syntax.
+            Additionally, the back end setup although initialized is completely empty
+            and I don't have access to the old MySQL data to port the tables over.
         </p>
         <p>
-        As such, I've decided to just go ahead and
-        create a full refactor of the website on a separate repository.
+            As such, I've decided to just go ahead and
+            create a full refactor of the website on a separate repository.
         </p>
     </div>
 
