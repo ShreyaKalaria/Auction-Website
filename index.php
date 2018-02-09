@@ -37,6 +37,7 @@ session_destroy();
         </div>
         <p>
             <a href="indexloggedin.php">Simulate Login</a>
+            <br>
             NOTE: This website was directly ported over to Heroku
             without refactoring SQL statements to accomodate for PostgresQL syntax.
             Additionally, the back end setup although initialized is completely empty
